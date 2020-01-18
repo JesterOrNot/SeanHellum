@@ -1,4 +1,4 @@
-format:
+format: deps
 	prettier --write static/**/*.js static/**/*.css templates/**
 .PHONY: format
 deps:
