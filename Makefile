@@ -4,4 +4,5 @@ format:
 deps:
 	pip3 install -r requirements.txt
 	npm install -g prettier
+	npm install
 .PHONY: deps
