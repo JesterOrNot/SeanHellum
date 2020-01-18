@@ -2,5 +2,8 @@ ports:
   - port: 3000
     onOpen: open-preview
 tasks:
-  - init: pip3 install -r requirements.txt
+  - init: pip3 install -r requirements.txt && npm install
     command: python3 app.py
+vscode:
+  extensions:
+    - esbenp.prettier-vscode@3.18.0:SpDMXXww8cAUOXaBCNECgQ==
