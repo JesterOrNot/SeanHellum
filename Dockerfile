@@ -10,6 +10,4 @@ COPY . /app
 
 EXPOSE 3000
 
-ENTRYPOINT [ "python3" ]
-
-CMD [ "app.py" ]
+CMD ["python3", "-m", "flask", "run", "--host=0.0.0.0"]
