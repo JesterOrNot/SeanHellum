@@ -1,8 +1,3 @@
 useTabs: false
 singleQuote: false
 tabWidth: 4
-overrides:
-  - files: >
-      templates/**/*.html
-      static/**/*.js
-      static/**/*.css

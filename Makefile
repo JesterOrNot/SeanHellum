@@ -1,5 +1,5 @@
 format:
-	prettier --write static/**/*.js static/**/*.css templates/**/*.html
+	prettier --write static/**/*.js static/**/*.css templates/**
 .PHONY: format
 deps:
 	pip3 install -r requirements.txt
