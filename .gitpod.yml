@@ -2,7 +2,7 @@ ports:
   - port: 3000
     onOpen: open-preview
 tasks:
-  - init: pip3 install -r requirements.txt && npm install
+  - init: make deps && make format
     command: python3 app.py
 vscode:
   extensions:
