@@ -16,6 +16,8 @@ h1 {
     font-size: 1.5rem;
     padding: 0.5rem;
 }
-div > span {
+.info {
+    font-size: 10px;
     text-align: center;
+    margin-right: 100px;
 }
