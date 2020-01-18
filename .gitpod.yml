@@ -4,6 +4,9 @@ ports:
 tasks:
   - init: make deps && make format
     command: python3 app.py
+    name: split
+  - command: echo split
+    openMode: split-right
 vscode:
   extensions:
     - esbenp.prettier-vscode@3.18.0:SpDMXXww8cAUOXaBCNECgQ==
