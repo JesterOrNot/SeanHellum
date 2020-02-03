@@ -6,6 +6,3 @@ deps:
 	npm install -g prettier
 	npm install
 .PHONY: deps
-run:
-	python3 app.py
-.PHONY: run
