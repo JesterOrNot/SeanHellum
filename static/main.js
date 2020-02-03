@@ -5,5 +5,5 @@ function openGosh() {
     window.open("https://github.com/gosh-terminal/gosh");
 }
 function openCliKit() {
-    window.open("https://github.com/JesterOrNot/cli_kit")
+    window.open("https://github.com/JesterOrNot/cli_kit");
 }
