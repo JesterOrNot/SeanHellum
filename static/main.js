@@ -4,3 +4,6 @@ function openGitpod() {
 function openGosh() {
     window.open("https://github.com/gosh-terminal/gosh");
 }
+function openCliKit() {
+    window.open("https://github.com/JesterOrNot/cli_kit")
+}
