@@ -14,5 +14,5 @@ function goToHome() {
     window.location.replace("index.html");
 }
 function goToSkills() {
-    window.location.replace("skills.html")
+    window.location.replace("skills.html");
 }
