@@ -12,6 +12,7 @@ body {
 }
 .title {
     font-weight: normal;
+    font: 300 2.4rem / 1.6 "Josefin sans", sans-serif;
     border-bottom: 1px dotted #ddd;
     font-size: 1.5rem;
     padding: 0.5rem;
@@ -39,7 +40,8 @@ button {
     border: none;
     color: white;
     padding: 15px 32px;
-    width: 100%;
+    border-radius: 6px;
+    width: 33.333%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
