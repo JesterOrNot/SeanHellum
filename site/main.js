@@ -7,3 +7,9 @@ function openGosh() {
 function openCliKit() {
     window.open("https://github.com/JesterOrNot/cli_kit");
 }
+function goToWork() {
+    window.location.replace("work.html");
+}
+function goToHome() {
+    window.location.replace("index.html");
+}
