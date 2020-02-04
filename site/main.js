@@ -13,3 +13,6 @@ function goToWork() {
 function goToHome() {
     window.location.replace("index.html");
 }
+function goToSkills() {
+    window.location.replace("skills.html");
+}
