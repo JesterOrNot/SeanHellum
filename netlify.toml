@@ -2,3 +2,7 @@
   from = "/work"
   to = "/work.html"
   status = 301
+[[redirects]]
+  from = "/skills"
+  to = "/skills.html"
+  status = 301
