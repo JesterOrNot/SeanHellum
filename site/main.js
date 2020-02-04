@@ -11,5 +11,5 @@ function goToWork() {
     window.location.replace("work.html");
 }
 function goToHome() {
-    window.location.replace("https://seanhellum.netlify.com");
+    window.location.replace("index.html");
 }
