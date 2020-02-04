@@ -8,8 +8,8 @@ function openCliKit() {
     window.location.replace("https://github.com/JesterOrNot/cli_kit");
 }
 function goToWork() {
-    window.location.replace('https://seanhellum.netlify.com/work')
+    window.location.replace("https://seanhellum.netlify.com/work");
 }
 function goToHome() {
-    window.location.replace('https://seanhellum.netlify.com')
+    window.location.replace("https://seanhellum.netlify.com");
 }
