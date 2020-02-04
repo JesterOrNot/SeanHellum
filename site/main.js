@@ -1,11 +1,11 @@
 function openGitpod() {
-    window.location.replace("https://www.gitpod.io/docs/");
+    window.open("https://www.gitpod.io/docs/");
 }
 function openGosh() {
-    window.location.replace("https://github.com/gosh-terminal/gosh");
+    window.open("https://github.com/gosh-terminal/gosh");
 }
 function openCliKit() {
-    window.location.replace("https://github.com/JesterOrNot/cli_kit");
+    window.open("https://github.com/JesterOrNot/cli_kit");
 }
 function goToWork() {
     window.location.replace("work.html");
