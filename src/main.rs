@@ -1,8 +1,8 @@
 #![feature(proc_macro_hygiene, decl_macro)]
 #[macro_use]
 extern crate rocket;
-use std::io::Result;
 use rocket::response::NamedFile;
+use std::io::Result;
 use std::path::{Path, PathBuf};
 
 #[get("/")]
@@ -22,5 +22,7 @@ fn files(file: PathBuf) -> Option<NamedFile> {
     NamedFile::open(Path::new("site/").join(file)).ok()
 }
 fn main() {
-    rocket::ignite().mount("/", routes![index, skills, work, files]).launch();
+    rocket::ignite()
+        .mount("/", routes![index, skills, work, files])
+        .launch();
 }
