@@ -12,6 +12,10 @@ fn index() -> Result<NamedFile> {
 fn skills() -> Result<NamedFile> {
     NamedFile::open("site/skills.html")
 }
+#[get("/work")]
+fn work() -> Result<NamedFile> {
+    NamedFile::open("site/work.html")
+}
 fn main() {
-    rocket::ignite().mount("/", routes![index, skills]).launch();
+    rocket::ignite().mount("/", routes![index, skills, work]).launch();
 }
