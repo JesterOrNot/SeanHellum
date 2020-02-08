@@ -4,8 +4,8 @@ ports:
   - port: 8000
     onOpen: open-preview
 tasks:
-  - init: make deps && make format
-    command: python3 app.py
-    name: split
+  - init: cargo build
+    command: cargo run
   - command: echo split
     openMode: split-right
+    name: split
