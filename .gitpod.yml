@@ -4,7 +4,7 @@ ports:
   - port: 8000
     onOpen: open-preview
 tasks:
-  - init: cargo build
+  - init: cargo build --release
     command: cargo run
   - command: echo split
     openMode: split-right
