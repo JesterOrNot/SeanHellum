@@ -3,6 +3,7 @@
 extern crate rocket;
 use std::io::Result;
 use rocket::response::NamedFile;
+use std::path::{Path, PathBuf};
 
 #[get("/")]
 fn index() -> Result<NamedFile> {
@@ -16,6 +17,10 @@ fn skills() -> Result<NamedFile> {
 fn work() -> Result<NamedFile> {
     NamedFile::open("site/work.html")
 }
+#[get("/site/<file..>")]
+fn files(file: PathBuf) -> Option<NamedFile> {
+    NamedFile::open(Path::new("site/").join(file)).ok()
+}
 fn main() {
-    rocket::ignite().mount("/", routes![index, skills, work]).launch();
+    rocket::ignite().mount("/", routes![index, skills, work, files]).launch();
 }
