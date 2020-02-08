@@ -8,11 +8,11 @@ function openCliKit() {
     window.open("https://github.com/JesterOrNot/cli_kit");
 }
 function goToWork() {
-    window.location.replace("work.html");
+    window.location.replace("/work");
 }
 function goToHome() {
-    window.location.replace("index.html");
+    window.location.replace("/");
 }
 function goToSkills() {
-    window.location.replace("skills.html");
+    window.location.replace("/skills");
 }
