@@ -1,5 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
 ports:
-  - port: 3000
+  - port: 8000
     onOpen: open-preview
 tasks:
   - init: make deps && make format
@@ -7,6 +9,3 @@ tasks:
     name: split
   - command: echo split
     openMode: split-right
-vscode:
-  extensions:
-    - esbenp.prettier-vscode@3.18.0:SpDMXXww8cAUOXaBCNECgQ==
