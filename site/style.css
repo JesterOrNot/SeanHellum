@@ -22,8 +22,10 @@ body {
     text-align: center;
 }
 .card {
-    width: 100%;
+    width: 90%;
     height: auto;
+    left: 1.9%;
+    position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     border-radius: 40px;
@@ -31,7 +33,7 @@ body {
 img {
     width: 100%;
     height: auto;
-    max-height: 280px;
+    max-height: 300px;
     border-radius: 10px 10px 0 0;
 }
 .card:hover {
@@ -48,6 +50,7 @@ button {
     border-radius: 20px;
     width: 33.333%;
     text-align: center;
+    cursor: pointer;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -57,4 +60,7 @@ button {
 }
 button:hover {
     background-color: #505857;
+}
+a {
+    cursor: help;
 }
