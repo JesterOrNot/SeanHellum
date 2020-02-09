@@ -9,10 +9,12 @@ use std::path::{Path, PathBuf};
 fn index() -> Result<NamedFile> {
     NamedFile::open("site/index.html")
 }
+
 #[get("/skills")]
 fn skills() -> Result<NamedFile> {
     NamedFile::open("site/skills.html")
 }
+
 #[get("/work")]
 fn work() -> Result<NamedFile> {
     NamedFile::open("site/work.html")
@@ -27,6 +29,7 @@ fn error_not_found() -> Result<NamedFile> {
 fn files(file: PathBuf) -> Option<NamedFile> {
     NamedFile::open(Path::new("site/").join(file)).ok()
 }
+
 fn main() {
     rocket::ignite()
         .mount("/", routes![index, skills, work, files])
