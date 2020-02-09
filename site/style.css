@@ -5,6 +5,9 @@ h1 {
   color: #333;
   font-family: verdana, monospace;
 }
+.space {
+  margin-top: 80px;
+}
 #error {
   position: absolute;
   margin: auto;
@@ -32,9 +35,9 @@ body {
   text-align: center;
 }
 .card {
-  width: 90%;
+  width: 78.5%;
   height: auto;
-  left: 1.9%;
+  left: 11%;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -47,7 +50,7 @@ img {
   border-radius: 10px 10px 0 0;
 }
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 12px 24px 24px rgba(0, 0, 0, 0.2);
 }
 .container {
   padding: 2px 16px;
