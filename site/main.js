@@ -1,5 +1,5 @@
 function openGitpod() {
-  window.open("https://www.gitpod.io/docs/");
+  window.open("https://www.gitpod.io");
 }
 function openGosh() {
   window.open("https://github.com/gosh-terminal/gosh");
