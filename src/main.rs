@@ -17,6 +17,12 @@ fn skills() -> Result<NamedFile> {
 fn work() -> Result<NamedFile> {
     NamedFile::open("site/work.html")
 }
+
+#[catch(404)]
+fn error_not_found() -> Result<NamedFile> {
+    NamedFile::open("site/404.html")
+}
+
 #[get("/site/<file..>")]
 fn files(file: PathBuf) -> Option<NamedFile> {
     NamedFile::open(Path::new("site/").join(file)).ok()
@@ -24,5 +30,6 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 fn main() {
     rocket::ignite()
         .mount("/", routes![index, skills, work, files])
+        .register(catchers![error_not_found])
         .launch();
 }
