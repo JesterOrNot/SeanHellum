@@ -1,18 +1,18 @@
 function openGitpod() {
-    window.open("https://www.gitpod.io/docs/");
+  window.open("https://www.gitpod.io/docs/");
 }
 function openGosh() {
-    window.open("https://github.com/gosh-terminal/gosh");
+  window.open("https://github.com/gosh-terminal/gosh");
 }
 function openCliKit() {
-    window.open("https://github.com/JesterOrNot/cli_kit");
+  window.open("https://github.com/JesterOrNot/cli_kit");
 }
 function goToWork() {
-    window.location.replace("/work");
+  window.location.replace("/work");
 }
 function goToHome() {
-    window.location.replace("/");
+  window.location.replace("/");
 }
 function goToSkills() {
-    window.location.replace("/skills");
+  window.location.replace("/skills");
 }
