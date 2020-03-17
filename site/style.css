@@ -1,68 +1,12 @@
 h1 {
   text-align: center;
 }
-p {
-  font-weight: 300;
-  font-size: 24px;
-  color: #333333;
-  line-height: 38px;
-  font-style: normal;
-  font-family: "Josefin sans", sans-serif;
-}
-.space {
-  margin-top: 80px;
-}
-#error {
-  position: absolute;
-  margin: auto;
-  text-align: center;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  height: 3cm;
-}
 body {
   margin: 0 auto;
   padding: 1rem;
 }
-.title {
-  font-weight: normal;
-  font: 300 2.4rem / 1.6 "Josefin sans", sans-serif;
-  border-bottom: 1px dotted #ddd;
-  color: #333333;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-}
-.info {
-  font-size: 20px;
-  text-align: center;
-}
-.card {
-  width: 50%;
-  /* height: auto; */
-  left: 11%;
-  position: relative;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 40px;
-}
-@media only screen and (max-width: 768px) {
-  img {
-    width: 100%;
-  }
-}
 img {
   width: 80%;
-  /* height: auto; */
-  max-height: 300px;
-  border-radius: 10px 10px 0 0;
-}
-.card:hover {
-  box-shadow: 12px 12px 24px 24px rgba(0, 0, 0, 0.2);
-}
-.container {
-  padding: 2px 16px;
 }
 button {
   background-color: #293335;
@@ -77,13 +21,74 @@ button {
   display: inline-block;
   font-size: 16px;
 }
-#current {
-  background-color: #4caf50;
-}
 button:hover {
   background-color: #505857;
+}
+@media only screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+  .info span {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 20px;
+  }
 }
 a:link {
   text-decoration: underline;
   cursor: help;
+}
+#current {
+  background-color: #4caf50;
+}
+p,
+.info {
+  font-weight: 300;
+  font-size: 24px;
+  color: #333333;
+  line-height: 38px;
+  font-style: normal;
+  font-family: "Josefin sans", sans-serif;
+}
+.info {
+  text-align: center;
+}
+.space {
+  margin-top: 80px;
+}
+#error {
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 3cm;
+}
+.title {
+  font-weight: normal;
+  font: 300 2.4rem / 1.6 "Josefin sans", sans-serif;
+  border-bottom: 1px dotted #ddd;
+  color: #333333;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.card {
+  width: 50%;
+  /* height: auto; */
+  left: 11%;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 40px;
+}
+.card:hover {
+  box-shadow: 12px 12px 24px 24px rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 2px 16px;
 }
