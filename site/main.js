@@ -4,8 +4,8 @@ function openGitpod() {
 function openGosh() {
   window.open("https://github.com/gosh-terminal/gosh");
 }
-function openCliKit() {
-  window.open("https://github.com/JesterOrNot/cli_kit");
+function openDockerfreeze() {
+  window.open("https://github.com/gitpod-io/dockerfreeze");
 }
 function goToWork() {
   window.location.replace("/work");
