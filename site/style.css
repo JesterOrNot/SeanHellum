@@ -9,7 +9,6 @@ p {
   font-style: normal;
   font-family: "Josefin sans", sans-serif;
 }
-
 .space {
   margin-top: 80px;
 }
@@ -84,7 +83,7 @@ button {
 button:hover {
   background-color: #505857;
 }
-a {
+a:link {
   text-decoration: underline;
   cursor: help;
 }
