@@ -2,7 +2,6 @@ h1 {
   text-align: center;
 }
 body {
-  margin: 0 auto;
   padding: 1rem;
 }
 img {
@@ -27,25 +26,46 @@ button:hover {
 @media only screen and (max-width: 768px) {
   img {
     width: 100%;
+    height: 200;
   }
   .info span {
     font-size: 25px;
     line-height: 40px;
   }
   p {
-    font-size: 15px;
+    font-size: 10px;
     line-height: 20px;
+    font-family: "Josefin sans", sans-serif;
+    size: 10px;
+  }
+  .card {
+    /* left/: 11%; */
+    width: 1000in;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    /* border-radius: 40px;/ */
+  }
+  a:visited,
+  a:link {
+    color: rgb(9, 82, 83);
+    text-decoration: underline;
+    cursor: help;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 20px;
+    font-family: "Josefin sans", sans-serif;
+    size: 10px;
   }
 }
-a:link {
-  text-decoration: underline;
-  cursor: help;
+p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+  font-family: "Josefin sans", sans-serif;
 }
-#current {
-  background-color: #4caf50;
-}
-p,
 .info {
+  text-align: center;
   font-weight: 300;
   font-size: 24px;
   color: #333333;
@@ -53,8 +73,18 @@ p,
   font-style: normal;
   font-family: "Josefin sans", sans-serif;
 }
-.info {
-  text-align: center;
+a:visited,
+a:link {
+  color: rgb(9, 82, 83);
+  text-decoration: underline;
+  cursor: help;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+  font-family: "Josefin sans", sans-serif;
+}
+#current {
+  background-color: #4caf50;
 }
 .space {
   margin-top: 80px;
@@ -78,13 +108,12 @@ p,
   padding: 0.5rem;
 }
 .card {
-  width: 50%;
-  /* height: auto; */
+  width: 60%;
   left: 11%;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  border-radius: 40px;
+  /* border-radius: 40px; */
 }
 .card:hover {
   box-shadow: 12px 12px 24px 24px rgba(0, 0, 0, 0.2);
