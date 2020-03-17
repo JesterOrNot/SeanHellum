@@ -1,10 +1,15 @@
 h1 {
   text-align: center;
 }
-* {
-  color: #333;
-  font-family: verdana, monospace;
+p {
+  font-weight: 300;
+  font-size: 24px;
+  color: #333333;
+  line-height: 38px;
+  font-style: normal;
+  font-family: "Josefin sans", sans-serif;
 }
+
 .space {
   margin-top: 80px;
 }
@@ -43,8 +48,13 @@ body {
   transition: 0.3s;
   border-radius: 40px;
 }
+@media only screen and (max-width: 768px) {
+  img {
+    width: 100%;
+  }
+}
 img {
-  width: 100%;
+  width: 50%;
   height: auto;
   max-height: 300px;
   border-radius: 10px 10px 0 0;
