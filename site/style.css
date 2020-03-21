@@ -1,51 +1,91 @@
-h1 {
-  text-align: center;
-}
 body {
+  margin: 0;
+}
+
+body:not(header, nav) {
   padding: 1rem;
 }
+
 img {
   width: 80%;
 }
-button {
-  background-color: #293335;
-  border: none;
-  color: white;
-  padding: 15px 15px;
-  border-radius: 20px;
-  width: 33.333%;
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.title {
+  font-weight: normal;
+  font-family: "Josefin sans", sans-serif;
+  border-bottom: 1px solid #9a9a9a;
+  color: #333333;
+  font-size: 1.5rem;
   text-align: center;
-  cursor: pointer;
+  margin-bottom: 10px;
+  padding-top: 60px;
+}
+
+header nav ul li {
+  float: left;
+}
+
+header {
+  margin-bottom: 60px;
+}
+
+header .title {
+  margin-bottom: 0;
+}
+
+header nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  font-family: "Josefin sans", sans-serif;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
 }
-button:hover {
-  background-color: #505857;
+
+header nav ul li a:not(.current) {
+  cursor: pointer;
 }
+
+header nav ul li a:hover:not(.current) {
+  background-color: #111;
+}
+
+.current {
+  background-color: #4caf50;
+}
+
 @media only screen and (max-width: 768px) {
   img {
     width: 100%;
     height: 200;
   }
+
   .info span {
     font-size: 25px;
     line-height: 40px;
   }
+
   p {
     font-size: 10px;
     line-height: 20px;
     font-family: "Josefin sans", sans-serif;
     size: 10px;
   }
+
   .card {
-    /* left/: 11%; */
-    width: 1000in;
-    position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    /* border-radius: 40px;/ */
   }
+
   a:visited,
   a:link {
     color: rgb(9, 82, 83);
@@ -58,12 +98,14 @@ button:hover {
     size: 10px;
   }
 }
+
 p {
   font-weight: 300;
   font-size: 20px;
   line-height: 38px;
   font-family: "Josefin sans", sans-serif;
 }
+
 .info {
   text-align: center;
   font-weight: 300;
@@ -73,6 +115,7 @@ p {
   font-style: normal;
   font-family: "Josefin sans", sans-serif;
 }
+
 a:visited,
 a:link {
   color: rgb(9, 82, 83);
@@ -83,12 +126,11 @@ a:link {
   line-height: 38px;
   font-family: "Josefin sans", sans-serif;
 }
-#current {
-  background-color: #4caf50;
-}
+
 .space {
   margin-top: 80px;
 }
+
 #error {
   position: absolute;
   margin: auto;
@@ -99,25 +141,21 @@ a:link {
   bottom: 0;
   height: 3cm;
 }
-.title {
-  font-weight: normal;
-  font: 300 2.4rem / 1.6 "Josefin sans", sans-serif;
-  border-bottom: 1px dotted #ddd;
-  color: #333333;
-  font-size: 1.5rem;
-  padding: 0.5rem;
-}
+
 .card {
   width: 60%;
-  left: 11%;
-  position: relative;
+  margin-left: 140px;
+  margin-bottom: 60px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  /* border-radius: 40px; */
+  border-radius: 40px;
 }
+
 .card:hover {
-  box-shadow: 12px 12px 24px 24px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
+
 .container {
   padding: 2px 16px;
+  margin-bottom: 60px;
 }
