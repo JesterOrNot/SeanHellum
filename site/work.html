@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sean Hellum | Work</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/site/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/site/style.css" />
-    <script src="/site/main.js"></script>
-  </head>
-  <button onclick="goToHome()">Home</button
-  ><button onclick="goToWork()" id="current">Work</button
-  ><button onclick="goToSkills()">Skills</button>
-  <div class="space"></div>
-  <div class="space"></div>
-  <h1 class="title">Here is what I am working on!</h1>
-  <hr />
-  <br />
-  <div class="card" onclick="openGitpod()">
-    <img src="/site/gitpod.png" alt="Gitpod" />
-    <div class="container">
-      <h4><b>Gitpod</b></h4>
-      <hr />
-      <p>
-        A Next Generation IDE For GitHub and GitLab! I am in charge of the
-        languages and frameworks sections of the docs
-      </p>
-    </div>
-  </div>
-  <br />
-  <hr />
-  <br />
-  <div class="card" onclick="openGosh()">
-    <img src="/site/gosh.png" alt="goshell" />
-    <div class="container">
-      <h4><b>Goshell</b></h4>
-      <hr />
-      <p>
-        A Next Generation shell based on the concept that you can do anything
-        from the terminal! I'm the one who started this and I am on its core
-        team.
-      </p>
-    </div>
-  </div>
-  <br />
-  <hr />
-  <br />
-  <div class="card" onclick="openDockerfreeze()">
-    <img src="/site/dockerfreeze.png" alt="Dockerfreeze" />
-    <div class="container">
-      <h4><b>Dockerfreeze</b></h4>
-      <hr />
-      <p>
-        Freeze your development enviornment as Dockerfile, this I started and
-        now is being housed under the gitpod-io org
-      </p>
-    </div>
-    <br />
-    <br />
-    <br />
-  </div>
-  <br />
-  <br />
-  <br />
+
+<head>
+	<title>Sean Hellum | Work</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="/site/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/site/style.css" />
+	<script src="/site/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul type="none">
+				<li><a onclick="goToHome()">Home</a></li>
+				<li><a class="current">Work</a></li>
+				<li><a onclick="goToSkills()">Skills</a></li>
+			</ul>
+		</nav>
+		<h1 class="title">Here is what I am working on!</h1>
+	</header>
+	<div class="card" onclick="openGitpod()">
+		<img src="/site/gitpod.png" alt="Gitpod">
+		<div class="container">
+			<p><b>Gitpod</b></p>
+			<hr />
+			<p>
+				A Next Generation IDE For GitHub and GitLab! I am in charge of the
+				languages and frameworks sections of the docs
+			</p>
+		</div>
+	</div>
+	<div class="card" onclick="openGosh()">
+		<img src="/site/gosh.png" alt="goshell" />
+		<div class="container">
+			<p><b>Goshell</b></p>
+			<hr />
+			<p>
+				A Next Generation shell based on the concept that you can do anything
+				from the terminal! I'm the one who started this and I am on its core
+				team.
+			</p>
+		</div>
+	</div>
+	<div class="card" onclick="openDockerfreeze()">
+		<img src="/site/dockerfreeze.png" alt="Dockerfreeze" />
+		<div class="container">
+			<p><b>Dockerfreeze</b></p>
+			<hr />
+			<p>
+				Freeze your development enviornment as Dockerfile, this I started and
+				now is being housed under the gitpod-io org
+			</p>
+		</div>
+	</div>
+</body>
+
 </html>

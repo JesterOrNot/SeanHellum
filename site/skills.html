@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sean Hellum | Skills</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/site/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/site/style.css" />
-    <script src="/site/main.js"></script>
-  </head>
-  <button onclick="goToHome()">Home</button
-  ><button onclick="goToWork()">Work</button
-  ><button onclick="goToSkills()" id="current">Skills</button>
-  <div class="space"></div>
-  <hr />
-  <div class="space"></div>
-  <h1 class="title">My Skills</h1>
 
-  <p>I use many technologies my favorites include:</p>
-  <ul>
-    <br /><br />
-    <p>Docker</p>
-    <hr />
-    <p>
-      Docker is a tool I use everyday, from creating reproducable development
-      enviornments, to wrapping services for deployment. I am able to write
-      minimal base images optimized for space.
-    </p>
-    <br /><br />
-    <p>Rust</p>
-    <hr />
-    <p>
-      The server this site runs on is
-      <a href="https://rocket.rs" target="_blank">rocket.rs</a> which means the
-      backend routing logic for the site is written 100% in Rust!
-    </p>
-    <br /><br />
-    <p>Go</p>
-    <hr />
-    <p>
-      I write Go code sometimes to not nearly as much as with other languages
-      but I find some of it's libraries really usefull. I also know how to write
-      goroutines which is fun!
-    </p>
-    <br /><br />
-    <p>Linux/Unix</p>
-    <hr />
-    <p>
-      I've always loved UNIX, and the command line, specifically I love building
-      advanced command line shells. I know how to use both canonical(cooked)
-      mode, and noncanonical(raw). Also advanced command line argument parsers.
-    </p>
-    <br /><br />
-    <p>Bash</p>
-    <hr />
-    <p>
-      Bash is one of my favoraite tools. I am adept with Bash scripting/misc
-      bash stuffs including how to write Manpages command substitution, piping
-      etc. I mainly use it for composing applications together and I use it for
-      Docker helper scripts
-    </p>
-    <br /><br />
-    <p>Python</p>
-    <hr />
-    <p>
-      Python was my first programming language, I usually use this for rapid
-      prototyping, automation, and glue code. Some popular libraries that I use
-      are Python Prompt Toolkit and Flask
-    </p>
-    <br /><br />
-  </ul>
+<head>
+	<title>Sean Hellum | Skills</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" type="image/x-icon" href="/site/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="/site/style.css" />
+	<script src="/site/main.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul type="none">
+				<li><a onclick="goToHome()">Home</a></li>
+				<li><a onclick="goToWork()">Work</a></li>
+				<li><a class="current">Skills</a></li>
+			</ul>
+		</nav>
+	</header>
+	<p class="info">I use many technologies my favorites include:</p>
+	<br /><br />
+	<section>
+		<p class="title">Docker</p>
+		<p>
+			Docker is a tool I use everyday, from creating reproducable development
+			enviornments, to wrapping services for deployment. I am able to write
+			minimal base images optimized for space.
+		</p>
+	</section>
+	<section>
+		<p class="title">Rust</p>
+		<p>
+			The server this site runs on is <a href="https://rocket.rs" target="_blank">rocket.rs</a> which means the
+			backend routing logic for the site is written 100% in Rust!
+		</p>
+	</section>
+	<section>
+		<p class="title">Go</p>
+		<p>
+			I write Go code sometimes to not nearly as much as with other languages
+			but I find some of it's libraries really usefull. I also know how to write
+			goroutines which is fun!
+		</p>
+	</section>
+	<section>
+		<p class="title">Linux/Unix</p>
+		<p>
+			I've always loved UNIX, and the command line, specifically I love building
+			advanced command line shells. I know how to use both canonical(cooked)
+			mode, and noncanonical(raw). Also advanced command line argument parsers.
+		</p>
+	</section>
+	<section>
+		<p class="title">Bash</p>
+		<p>
+			Bash is one of my favoraite tools. I am adept with Bash scripting/misc
+			bash stuffs including how to write Manpages command substitution, piping
+			etc. I mainly use it for composing applications together and I use it for
+			Docker helper scripts
+		</p>
+	</section>
+	<section>
+		<p class="title">Python</p>
+		<p>
+			Python was my first programming language, I usually use this for rapid
+			prototyping, automation, and glue code. Some popular libraries that I use
+			are Python Prompt Toolkit and Flask
+		</p>
+	</section>
+</body>
+
 </html>

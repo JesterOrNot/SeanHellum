@@ -10,11 +10,18 @@
 </head>
 
 <body>
-	<button onclick="goToHome()" id="current">Home</button><button onclick="goToWork()">Work</button><button onclick="goToSkills()">Skills</button>
+	<header>
+		<nav>
+			<ul type="none">
+				<li><a class="current">Home</a></li>
+				<li><a onclick="goToWork()">Work</a></li>
+				<li><a onclick="goToSkills()">Skills</a></li>
+			</ul>
+		</nav>
+	</header>
 	<div class="space"></div>
-	<hr>
 	<div class="space"></div>
-	<div class="info">
+	<section class="info">
 		<span>Hello, I'm Sean.</span>
 		<br />
 		<span>I'm a Student.</span>
@@ -23,24 +30,24 @@
 		<br />
 		<span
         >I work at <a href="https://typefox.io" target="_blank">TypeFox.</a></span>
-	</div>
-	<p>
+	</section>
+	<p class="info">
 		I love Containers/Docker, WASM/WASI, Building CLIs and TUIs, Linux/UNIX programming, and writing Developer Tools
 	</p>
-	<div>
+	<section>
 		<h2 class="title">Where to find me</h2>
 
-		<a href="https://github.com/JesterOrNot" target="_blank">I'm on GitHub</a>
-		<br />
-		<a href="https://dev.to/jesterornot" target="_blank">I'm on dev.to</a>
-		<br />
-		<a href="https://stackoverflow.com/users/11262726/sean-hellum?tab=profile" target="_blank">I'm also on
-			StackOverflow</a>
-		<br />
-		<a href="https://www.linkedin.com/in/sean-hellum-84ba401a2/" target="_blank">I'm also on Linkedin</a>
-		<br />
+		<ul type="none">
+			<li><a href="https://github.com/JesterOrNot" target="_blank">I'm on GitHub</a></li>
+			<li><a href="https://dev.to/jesterornot" target="_blank">I'm on dev.to</a></li>
+			<li><a href="https://stackoverflow.com/users/11262726/sean-hellum?tab=profile" target="_blank">I'm also on
+					StackOverflow</a></li>
+			<li><a href="https://www.linkedin.com/in/sean-hellum-84ba401a2/" target="_blank">I'm also on Linkedin</a>
+			</li>
+		</ul>
 		<p>Send me an email at <a href="mailto:seanhellum45@gmail.com">seanhellum45@gmail.com</a></p>
 		<br />
-    </div>
+	</section>
 </body>
+
 </html>
