@@ -131,7 +131,7 @@ a:link {
   margin-top: 80px;
 }
 
-#error {
+.error {
   position: absolute;
   margin: auto;
   text-align: center;
