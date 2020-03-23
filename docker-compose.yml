@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web:
+    restart: on-failure
+    build: .
+    environment:
+      ROCKET_ENV: production
+    ports:
+      - "8000:8000"
