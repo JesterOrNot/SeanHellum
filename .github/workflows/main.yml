@@ -1,0 +1,20 @@
+name: Deploy To Heroku
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.0.0 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "seanhellum"
+          heroku_email: "seanhellum45@gmail.com"
+          buildpack: "https://github.com/emk/heroku-buildpack-rust.git"
+          branch: master
+          usedocker: true
