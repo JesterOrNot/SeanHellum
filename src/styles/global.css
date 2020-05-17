@@ -66,6 +66,17 @@ header nav ul li a:hover:not(.current) {
   background-color: #4caf50;
 }
 
+.externalLink:link,
+.externalLink:visited {
+  color: rgb(9, 82, 83);
+  text-decoration: underline;
+  cursor: help;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 38px;
+  font-family: 'Bellota', cursive;
+}
+
 @media only screen and (max-width: 768px) {
   img {
     width: 100%;
@@ -88,8 +99,8 @@ header nav ul li a:hover:not(.current) {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
 
-  a:visited,
-  a:link {
+  .externalLink:link,
+  .externalLink:visited {
     color: rgb(9, 82, 83);
     text-decoration: underline;
     cursor: help;
@@ -116,18 +127,6 @@ p {
   line-height: 38px;
   font-style: normal;
   font-family: 'Bellota', cursive;
-}
-
-a:visited,
-a:link {
-  color: rgb(9, 82, 83);
-  text-decoration: underline;
-  cursor: help;
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 38px;
-  font-family: 'Bellota', cursive;
-
 }
 
 .space {
