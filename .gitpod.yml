@@ -1,11 +1,21 @@
 image:
   file: .gitpod.Dockerfile
 ports:
-  - port: 8000
+  - port: 9000
     onOpen: open-preview
 tasks:
-  - init: cargo build --release
-    command: cargo run
-  - command: echo split
-    openMode: split-right
-    name: split
+  - name: Server
+    init: npm i && gatsby build
+    command: gatsby serve
+  - name: Terminal
+    command: echo ''
+vscode:
+  extensions:
+    - burkeholland.simple-react-snippets@1.2.2:aB/gV0ExPn8v6vEZNUjoWA==
+    - dbaeumer.vscode-eslint@2.1.5:9Wg0Glx/TwD8ElFBg+FKcQ==
+github:
+  prebuilds:
+    branches: true
+    pullRequestsFromForks: true
+    addBadge: true
+    addLabel: ready-to-code
