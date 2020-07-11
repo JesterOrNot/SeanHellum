@@ -9,3 +9,6 @@ tasks:
   - command: echo split
     openMode: split-right
     name: split
+vscode:
+  extensions:
+    - hashicorp.terraform@2.0.2:tz2tPxgWt4OX2uW4tYxxyA==
