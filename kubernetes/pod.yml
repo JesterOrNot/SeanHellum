@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sean-site
+spec:
+  selector:
+    matchLabels:
+      app: sean-site
+  template:
+    metadata:
+      labels:
+        app: sean-site
+    spec:
+      containers:
+      - name: sean-site
+        image: sean-site
+        imagePullPolicy: IfNotPresent
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8080
